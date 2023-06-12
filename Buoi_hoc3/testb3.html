@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <div>
+                <label for="color">Chon mau</label>
+                <input type="color" id="color" />
+            </div>
+            <div>
+                <label> Gioi tinh</label>
+                <label
+                    ><input type="radio" name="gioi tinh" value="1" />Khong xac
+                    dinh</label
+                >
+                <label
+                    ><input type="radio" name="gioi tinh" value="2"
+                    checked//>Nam</label
+                >
+                <label
+                    ><input type="radio" name="gioi tinh" value="3" />Nu</label
+                >
+            </div>
+
+            <div>
+                <label> So thich</label>
+                <label><input type="checkbox" checked />Khong xac dinh</label>
+                <label><input type="checkbox" />Nam</label>
+                <label><input type="checkbox" />Nu</label>
+            </div>
+
+            <div>
+                <label for="number">Nhap vao so</label>
+                <input
+                    type="number"
+                    id="number"
+                    name="number"
+                    max="50"
+                    min="20"
+                    step="2"
+                />
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input
+                    type="email"
+                    id="Email"
+                    name="Email"
+                    placeholder="Nhap vao email"
+                />
+            </div>
+
+            <div>
+                <label for="provinces">Chon Tinh/ThanhPho</label>
+                <select name="" id="provinces">
+                    <optgroup hidden>
+                        <option value="0">Chon Tinh/ThanhPho</option>
+                    </optgroup>
+                    <optgroup label="Mien Bac">
+                        <option value="1">Ha Noi</option>
+                    </optgroup>
+                    <optgroup label="Mien Trung">
+                        <option value="2">Da Nang</option>
+                    </optgroup>
+                    <optgroup label="Mien Nam">
+                        <option value="3">Ho Chi Minh</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </body>
+</html>

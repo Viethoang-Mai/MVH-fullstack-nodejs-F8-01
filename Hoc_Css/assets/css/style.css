@@ -1,0 +1,19 @@
+.container .child > h1 {
+    color: brown;
+}
+
+.content h1 {
+    color: blue;
+}
+
+h3 {
+    color: red;
+}
+
+.menu > li > a {
+    color: aqua;
+}
+
+h3.heading {
+    color: chartreuse;
+}

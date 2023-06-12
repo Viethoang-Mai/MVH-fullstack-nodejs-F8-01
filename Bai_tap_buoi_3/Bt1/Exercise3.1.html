@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Reset Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+            integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>Exercise3.1</title>
+    </head>
+    <body>
+        <main>
+            <section class="contact">
+                <div class="container">
+                    <!-- header -->
+                    <h1 class="contact__heading">CONTACT US</h1>
+                    <div class="contact__row">
+                        <!-- Contact-Info -->
+
+                        <section class="contact-info">
+                            <h2 class="contact-info__heading">Contact Info</h2>
+                            <ul class="contact-info__list">
+                                <!-- item1 -->
+                                <li class="contact-info__item">
+                                    <div class="contact-info__item--row">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <a href="#!" class="contact-info__link">
+                                            321 Awesome Street New York, NY1702
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- item2 -->
+                                <li class="contact-info__item">
+                                    <div class="contact-info__item--row">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <a href="#!" class="contact-info__link">
+                                            info@companyname.com
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- item3 -->
+                                <li class="contact-info__item">
+                                    <div class="contact-info__item--row">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <a href="#!" class="contact-info__link">
+                                            +1 800 123 1234
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Contact--Form -->
+                        <section class="contact-form">
+                            <h2 class="contact-form__heading">
+                                Having Any Query! Or Book an appointment
+                            </h2>
+                            <form action="" class="form">
+                                <!-- Name -->
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Your Name"
+                                        class="form-item__input"
+                                    />
+                                </div>
+                                <!-- Email -->
+                                <div>
+                                    <input
+                                        type="email"
+                                        name="name"
+                                        placeholder="Your Email"
+                                        class="form-item__input"
+                                    />
+                                </div>
+                                <!-- Subject -->
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="Subject"
+                                        placeholder="Subject"
+                                        class="form-item__input"
+                                    />
+                                </div>
+                                <!-- Message -->
+                                <div>
+                                    <textarea
+                                        name="Message"
+                                        id="Message"
+                                        cols="30"
+                                        rows="5"
+                                        placeholder="Message"
+                                        class="form-item__textarea"
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="form__btn">
+                                    Send Message
+                                </button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

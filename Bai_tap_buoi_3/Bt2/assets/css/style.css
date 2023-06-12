@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+/*  ===============COMMON============= */
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/*  ===============Header============= */
+
+.heading {
+    position: relative;
+    font-size: 4.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.heading::before {
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: " ";
+    width: 80px;
+    height: 4px;
+    background: #5f93fd;
+}
+
+/*  ===============Feeback row============= */
+.feedback__row {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 60px;
+    column-gap: 40px;
+}
+
+/* article */
+
+.feedback__item {
+    display: flex;
+    gap: 10px;
+}
+
+.feedback__item-image {
+}
+
+.feedback__item-img {
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.feedback__item-content .quote {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.feedback__item-content .name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 15px;
+}

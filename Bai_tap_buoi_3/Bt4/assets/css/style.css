@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/*  ===============COMMON============= */
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    margin-top: 50px;
+}
+
+.navigation {
+    display: inline-block;
+    border: 1px solid #af9656;
+}
+
+.list-items {
+    display: flex;
+}
+
+.list-items .item:first-child a {
+    padding: 5px 75px;
+}
+
+.list-items .item a {
+    color: #af9656;
+    padding: 5px 35px;
+}
+
+.list-items .item:hover {
+    transition: 0.5s;
+    background: #af9656;
+}
+
+.list-items .item:hover a {
+    color: #fff;
+}
+
+/* Contact-map */
+
+.contact-map {
+    margin-top: 50px;
+}
+.contact-map__body {
+    display: flex;
+    background: #f6f6f6;
+}
+
+.contact-map__info {
+    padding: 50px 0 100px 30px;
+    width: 35%;
+}
+
+.contact-map__info .heading {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.contact-map__info .contact,
+.contact-map__info .address {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.contact-map__info .contact a {
+    text-decoration: underline;
+    color: #af9656;
+}
+
+.map {
+    flex-grow: 2;
+}

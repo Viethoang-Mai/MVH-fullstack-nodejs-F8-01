@@ -1,19 +1,70 @@
-.container .child > h1 {
+/* h1 ~ ul {
+    color: aqua;
+} */
+/* h2 ~ div,
+h2 ~ p {
+    color: blue;
+} */
+
+/* .todolist input:checked ~ span {
+    color: blue;
+    text-decoration: line-through;
+} */
+/* .menu li ~ li ~ li a {
+    color: rgb(159, 28, 28);
+} */
+/* .element h1 + p {
+    color: blue;
+} */
+
+/* .link li a[href="https://fullstack-nodejs.fullstack.edu.vn/"]
+{
+    color: blue;
+} */
+/* div[class*="col"] {
+    color: blue;
+} */
+
+/* h1::before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #ccc;
+} */
+
+.text p::first-line {
+    color: blue;
+}
+.text p::first-letter {
+    font-size: 25px;
+}
+.text p::selection {
+    background: #ccc;
+    color: chocolate;
+}
+
+.email {
+    caret-color: aqua;
+}
+
+.email::placeholder {
+    color: brown;
+    font-style: italic;
+}
+
+.btn:active {
+    background: brown;
+}
+
+.text h2:first-child {
     color: brown;
 }
 
-.content h1 {
-    color: blue;
+.text h2:last-child {
+    color: yellowgreen;
 }
 
-h3 {
+.color:nth-last-of-type(1):checked ~ .content {
     color: red;
-}
-
-.menu > li > a {
-    color: aqua;
-}
-
-h3.heading {
-    color: chartreuse;
 }

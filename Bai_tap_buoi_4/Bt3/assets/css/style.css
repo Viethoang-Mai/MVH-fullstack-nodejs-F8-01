@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/*  ===============COMMON============= */
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    text-align: center;
+}
+/* Content */
+.heading {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+}
+
+input[name="navigation"] {
+    display: none;
+}
+
+/* Navigation */
+.list-items {
+    margin: 20px 0 50px 0;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+.list-items label {
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 12px 30px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* Product area */
+.product__item {
+    text-align: center;
+}
+
+.product__list-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__item .product__item--img:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.item-img__area {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.product__item--img {
+    display: inline-block;
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+}
+
+input[name="navigation"]:first-of-type:checked ~ nav ul li:first-of-type label,
+input[name="navigation"]:nth-of-type(2):checked
+    ~ nav
+    ul
+    li:nth-of-type(2)
+    label,
+input[name="navigation"]:nth-of-type(3):checked
+    ~ nav
+    ul
+    li:nth-of-type(3)
+    label,
+input[name="navigation"]:nth-of-type(4):checked
+    ~ nav
+    ul
+    li:nth-of-type(4)
+    label,
+input[name="navigation"]:last-of-type:checked ~ nav ul li:last-of-type label {
+    background: #29378e;
+    color: #f4f4f4;
+}
+
+/* product-cta */
+
+.product-cta {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+}
+
+.product-cta__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-cta__row i {
+    font-size: 1.2rem;
+}
+
+.product-cta__row a {
+    line-height: 40px;
+    display: block;
+    width: 47px;
+    height: 40px;
+    background: #29388e;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1.4rem;
+    color: #fff;
+    background: #29388e;
+    border: 1px solid #29388e;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Info product-item */
+.item-img__info {
+    margin-top: 50px;
+}
+
+.item-img__info-desc {
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #151515;
+}
+
+.item-img__info-price {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.item-img__area:hover {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.item-img__area:hover .product__item--img:first-of-type {
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.item-img__area:hover .product__item--img:last-of-type {
+    transform: scale(1.2);
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.item-img__area:hover .product-cta {
+    opacity: 1;
+    width: 100%;
+    transition: width 0.2s;
+}
+
+.product-item {
+    display: none;
+}
+
+input[id="skincare"]:checked ~ .product-area .product-area__skincare {
+    display: block;
+}
+input[id="haircare"]:checked ~ .product-area .product-area__haircare {
+    display: block;
+}
+input[id="cosmetics"]:checked ~ .product-area .product-area__cosmetics {
+    display: block;
+}
+input[id="fragrance"]:checked ~ .product-area .product-area__fragrance {
+    display: block;
+}
+input[id="makeup"]:checked ~ .product-area .product-area__makeup {
+    display: block;
+}

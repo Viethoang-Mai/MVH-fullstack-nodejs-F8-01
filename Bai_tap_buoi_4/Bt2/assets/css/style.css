@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.container {
+    width: 750px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* ====Header ====*/
+
+.reservation-form__heading {
+    font-size: 5.6rem;
+    color: #3a2617;
+    font-weight: 600;
+}
+
+/* ====Form==== */
+
+.reservation-form__heading::before {
+    position: relative;
+    top: -10px;
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    content: "RESERVATION";
+    font-size: 3.2rem;
+}
+
+.form-group {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+}
+
+.form-group input,
+.form-group .btn {
+    outline: none;
+    height: 50px;
+    border: 1px solid #dfdfdf;
+}
+
+.form-group input::placeholder {
+    font-family: "Bebas Neue", sans-serif;
+    color: #3d3d3d;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+.form-group .btn {
+    background: #b0332b;
+    font-family: inherit;
+    color: #fff;
+    border: 1px solid #b0332b;
+    border-radius: 5px;
+    cursor: pointer;
+}

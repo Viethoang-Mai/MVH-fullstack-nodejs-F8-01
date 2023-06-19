@@ -1,0 +1,19 @@
+/* .text:first-of-type {
+    color: rgba(34, 173, 168, 0.686);
+}
+
+.text:nth-of-type(2) {
+    color: hsla(15, 78%, 55%, 0.717);
+}
+
+.text:last-of-type {
+    color: #21171783;
+} */
+
+.content {
+    color: rgb(184, 32, 32);
+}
+
+.text {
+    color: inherit;
+}

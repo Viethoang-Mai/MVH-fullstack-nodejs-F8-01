@@ -1,0 +1,11 @@
+.content h2 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.content p {
+    text-indent: 10px;
+    word-wrap: break-word;
+}

@@ -1,0 +1,23 @@
+/* @font-face {
+    font-family: Sora;
+    src: url("../font/Sora-Bold.woff2");
+} */
+/* @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Open+Sans&display=swap"); */
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Sora", sans-serif;
+}
+
+.content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.content h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}

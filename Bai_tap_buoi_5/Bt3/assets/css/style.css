@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #3b3b3b;
+}
+
+/*  ===============COMMON============= */
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+/* Header */
+
+.service__header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.service__header--heading {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.service__header--desc {
+    font-size: 1.5rem;
+}
+
+/* Service Row */
+
+.service__row {
+    margin-top: 75px;
+}
+
+.service__list-items {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.service__item {
+    padding: 35px 0;
+    text-align: center;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.item__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #f1a83b;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.item__image i {
+    font-size: 3.5rem;
+    color: #f1a83b;
+}
+
+.item__name-service {
+    margin: 20px 0 15px;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.item__desc-service {
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 285px;
+    margin: 0 auto;
+    color: #aeb0b0;
+}
+
+.item__btn-service .btn {
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    border: 2px solid #f1a83b;
+    background: #f1a83b;
+    color: #fff;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.item__btn-service .btn:hover {
+    background: #f4ebeb;
+    color: #f1a83b;
+}
+
+.service__item:hover {
+    transform: translateY(-25px);
+    transition: 0.25s linear;
+}
+
+.service__item:hover i,
+.service__item:hover .item__image {
+    background: #f1a83b;
+    color: #fff;
+    transition: 0.25s;
+}

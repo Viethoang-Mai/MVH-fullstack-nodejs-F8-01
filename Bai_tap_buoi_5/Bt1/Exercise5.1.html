@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Reset Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+            integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="content">
+                        <div class="header">
+                            <h2 class="header__heading">Hey there</h2>
+                            <p class="header__desc">
+                                <span>We'd like to hear from you.</span> Send us
+                                your message or just say hy with our contact
+                                form or directly via phone, we love to chat.
+                            </p>
+                        </div>
+
+                        <!-- Form -->
+                        <form action="" class="form">
+                            <!-- Your name -->
+                            <div class="form-group">
+                                <label for="name" class="label"> </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="yourname"
+                                    placeholder="Your name "
+                                    class="input"
+                                />
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                                <!-- Notification -->
+                                <div class="notification">
+                                    <div class="notification__content">
+                                        <p class="notification__desc">
+                                            Enter your name
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  Email -->
+                            <div class="form-group">
+                                <label for="email" class="label"> </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@domain.com"
+                                    class="input"
+                                />
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                                <!-- Notification -->
+                                <div class="notification">
+                                    <div class="notification__content">
+                                        <p class="notification__desc">
+                                            Enter your email
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phone number -->
+                            <div class="form-group">
+                                <label for="phone" class="label"></label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="+84 097 766 2"
+                                    class="input"
+                                />
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                                <!-- Notification -->
+                                <div class="notification">
+                                    <div class="notification__content">
+                                        <p class="notification__desc">
+                                            Enter your phone number
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="form-group">
+                                <label for="subject" class="label"></label>
+                                <select id="subject" name="subject">
+                                    <optgroup hidden>
+                                        <option value="0">Subject</option>
+                                    </optgroup>
+                                    <option value="1">Family</option>
+                                    <option value="2">Education</option>
+                                    <option value="3">Love</option>
+                                </select>
+                                <i class="fa-solid fa-up-down"></i>
+
+                                <!-- Notification -->
+                                <div class="notification">
+                                    <div class="notification__content">
+                                        <p class="notification__desc">
+                                            Choose your subject
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <div class="label-group">
+                                    <label for="message" class="label"> </label>
+                                    <label for="message" class="label"></label>
+                                </div>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Message"
+                                ></textarea>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-xmark"></i>
+
+                                <!-- Notification -->
+                                <div class="notification">
+                                    <div class="notification__content">
+                                        <p class="notification__desc">
+                                            Enter your message
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Form-checkbox-button -->
+                            <div class="form-row">
+                                <input
+                                    type="checkbox"
+                                    name="send"
+                                    id="send"
+                                    checked
+                                />
+                                <label for="send">
+                                    <span></span>Send me a copy of this message!
+                                </label>
+                                <button type="submit" class="btn">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

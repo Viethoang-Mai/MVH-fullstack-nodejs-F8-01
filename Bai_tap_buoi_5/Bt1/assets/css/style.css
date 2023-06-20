@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/*  ===============COMMON============= */
+
+.container {
+    width: 720px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.input,
+select {
+    display: block;
+    padding: 0 15px;
+    width: 500px;
+    border: none;
+}
+select {
+    appearance: none;
+    color: #969292;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b5aeae;
+}
+
+textarea {
+    border: none;
+    padding: 15px;
+    width: 500px;
+}
+
+.label {
+    display: block;
+    width: 46px;
+    height: 45px;
+}
+
+.content {
+    max-width: 550px;
+    margin-top: 50px;
+}
+
+/* Header */
+
+.header__heading {
+    font-family: Lobster, cursive;
+    font-size: 4.6rem;
+    color: #333;
+}
+
+.header__desc {
+    max-width: 500px;
+    color: #8e8a8a;
+    margin-top: 20px;
+}
+
+.header__desc span {
+    color: #ef6c63;
+}
+
+/* Form */
+.form {
+    margin-top: 25px;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    border: 2px solid #dcdcdc;
+}
+
+.form .form-group:first-of-type .label {
+    background: url("../img/bgr-img.png") 50% 39% #dcdcdc;
+}
+
+.form .form-group:nth-of-type(2) .label {
+    background: url("../img/bgr-img.png") 49.5% 61% #dcdcdc;
+}
+
+.form .form-group:nth-of-type(3) .label {
+    background: url("../img/bgr-img.png") 32.4% 103% #dcdcdc;
+}
+.form .form-group:nth-of-type(4) .label {
+    background: url("../img/bgr-img.png") 50% -3% #dcdcdc;
+}
+.form .form-group:nth-of-type(5) .label:first-of-type {
+    background: url("../img/bgr-img.png") 67.3% 82% #dcdcdc;
+}
+
+.form .form-group:nth-of-type(5) .label:last-of-type {
+    background-color: #dcdcdc;
+    height: calc(100% - 45px);
+}
+
+.form .form-group:nth-of-type(5) {
+    height: 300px;
+}
+
+.form-group i {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    color: #dcdcdc;
+    font-size: 1.1rem;
+}
+
+i.fa-xmark {
+    display: none;
+}
+/* Notification */
+
+.form-group .notification {
+    position: absolute;
+    top: -60px;
+    left: 50px;
+    display: none;
+}
+
+.form-group .notification__content {
+    position: relative;
+    width: 140px;
+    height: 45px;
+    background: #333;
+    text-align: center;
+    line-height: 45px;
+    color: #e5dfdf;
+    font-size: 1.3rem;
+}
+
+.form-group:nth-of-type(3) .notification__content {
+    width: 170px;
+}
+
+.notification__content::before {
+    position: absolute;
+    top: 33px;
+    left: 16px;
+    display: block;
+    content: "";
+    border: 20px solid;
+    border-color: #333 transparent transparent transparent;
+    z-index: -1;
+}
+/* Form-checkbox-button */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.form-row .btn {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background: #e93f33;
+    color: #f5f2f2;
+    border: 1px solid #e93f33;
+    cursor: pointer;
+}
+.form-row .btn:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.form-row input[type="checkbox"] {
+    display: none;
+}
+
+.form-row label {
+    position: relative;
+    padding-left: 40px;
+    color: #8e8a8a;
+    cursor: pointer;
+}
+.form-row label span:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #dcdcdc;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+.form-row input[type="checkbox"]:checked + label span:before {
+    content: "\2713";
+    font-size: 20px;
+    font-weight: bolder;
+    color: #0f0d0d;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Yêu cầu 4 */
+.form-group:hover {
+    border-color: #0f0d0d;
+}
+
+.form .form-group:hover .label {
+    background-color: #333;
+    transition: 0.2s;
+}
+/* ? Tại sao 2 thẻ label ở item Message lại không nhận hover ở trên nhỉ? em thêm dòng dưới nó mới nhận */
+.form .form-group:hover .label-group .label {
+    background-color: #333;
+    transition: 0.2s;
+}
+
+.input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: none;
+}
+
+/* Yêu cầu 3 */
+/* Em chưa hiểu trong form này có focus rồi còn dùng active để làm gì ạ? nên em ko làm active =)) */
+.form-group .input:focus ~ .notification,
+.form-group textarea:focus ~ .notification,
+.form-group select:focus ~ .notification {
+    display: block;
+}
+
+.form-group .input:focus ~ i.fa-star,
+.form-group textarea:focus ~ i.fa-star {
+    display: none;
+}
+
+.form-group .input:focus ~ i.fa-xmark,
+.form-group textarea:focus ~ i.fa-xmark {
+    display: block;
+}

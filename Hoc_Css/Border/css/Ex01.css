@@ -1,0 +1,5 @@
+.content {
+    border: 100px solid;
+    display: inline-block;
+    border-color: aqua transparent transparent transparent;
+}

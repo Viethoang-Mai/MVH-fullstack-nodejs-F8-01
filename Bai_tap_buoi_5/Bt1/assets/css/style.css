@@ -224,15 +224,16 @@ i.fa-xmark {
     border-color: #0f0d0d;
 }
 
-.form .form-group:hover .label {
+.form .form-group:hover .label:first-of-type,
+.form .form-group:hover .label:last-of-type {
     background-color: #333;
     transition: 0.2s;
 }
 /* ? Tại sao 2 thẻ label ở item Message lại không nhận hover ở trên nhỉ? em thêm dòng dưới nó mới nhận */
-.form .form-group:hover .label-group .label {
+/* .form .form-group:hover .label-group .label {
     background-color: #333;
     transition: 0.2s;
-}
+} */
 
 .input:focus-visible,
 textarea:focus-visible,

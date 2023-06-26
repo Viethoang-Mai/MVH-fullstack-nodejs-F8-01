@@ -1,0 +1,13 @@
+/* .content {
+    width: 400px;
+    height: 400px;
+    background: #ccc;
+} */
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    /* mar */
+    margin-top: 50%;
+}

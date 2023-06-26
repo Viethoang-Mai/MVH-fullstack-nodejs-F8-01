@@ -43,11 +43,11 @@ a {
     background: #fff;
     width: 350px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.125);
+    transition: 0.2s ease-in-out;
 }
 
 .item:hover {
     border-color: #e6776f;
-    transition: 0.25s ease-in-out;
     transform: translateY(-10px);
 }
 

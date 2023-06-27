@@ -54,17 +54,18 @@ a {
     column-gap: 20px;
 }
 
-.discovery__header .item {
+.discovery__header .item label {
+    display: inline-block;
     text-align: center;
     border-radius: 999px;
     padding: 10px 20px;
     background: #e5e5e5;
     font-size: 1.4rem;
     font-weight: 600;
-    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.discovery__header .stat {
+.discovery__header .item span {
     font-size: 1.1rem;
     font-style: italic;
     font-weight: 600;
@@ -118,7 +119,7 @@ a {
 }
 
 /* hover */
-.discovery__header .item:hover {
+.discovery__header .item input:checked + label {
     background: #ae7b37;
     color: #ffffff;
 }

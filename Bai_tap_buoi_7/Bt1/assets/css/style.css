@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap");
+
+@font-face {
+    font-family: "SFU";
+    src: url("../Font/SFU/SFUDaxCondensedBold.woff2") format("woff2"),
+        url("../Font/SFU/SFUDaxCondensedBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Asap", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: #3f3424;
+}
+
+/*  ===============COMMON============= */
+
+.container {
+    width: 1280px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+}
+
+.banner__background {
+    margin-top: 50px;
+}
+.banner__background--img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner__info {
+    position: absolute;
+    bottom: 90px;
+    left: 150px;
+    padding: 20px 20px 40px;
+    background: #ffffffcf;
+    border-radius: 5px;
+}
+
+.banner__info--heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #bf4240;
+}
+
+.banner__info--desc {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    max-width: 545px;
+}
+
+.banner__info--price {
+    font-family: "SFU", sans-serif;
+    position: absolute;
+    right: 26px;
+    bottom: -24px;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #bf4240;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 2.2rem;
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Asap", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/*  ===============COMMON============= */
+
+.container {
+    width: 1280px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* discovery__header */
+
+.discovery__header {
+    margin-top: 50px;
+}
+
+.discovery__header--heading {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.discovery__header--heading::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 10px;
+    width: 850px;
+    height: 2px;
+    background: #d1deee68;
+}
+
+.discovery__header .list-items {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.discovery__header .item {
+    text-align: center;
+    border-radius: 999px;
+    padding: 10px 20px;
+    background: #e5e5e5;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.discovery__header .stat {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+}
+/* discovery__body */
+
+.discovery__body {
+    margin-top: 30px;
+}
+
+.discovery__body .list-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.discovery__body .item {
+    width: 410px;
+    box-shadow: 0px -4px 15px 0 rgba(0, 0, 0, 0.108);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.discovery__body .item__img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: 0.25s linear;
+}
+
+.discovery__body .distrist,
+.discovery__body .selling {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 600;
+    top: 25px;
+    left: 30px;
+    color: #ffffff;
+}
+
+.discovery__body .selling {
+    top: 190px;
+    font-size: 1.7rem;
+}
+
+.selling span {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* hover */
+.discovery__header .item:hover {
+    background: #ae7b37;
+    color: #ffffff;
+}
+
+.discovery__body .item:hover .item__img {
+    transform: scale(1.1);
+    filter: brightness(0.95);
+}

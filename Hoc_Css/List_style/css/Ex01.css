@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .box {
+    width: 300px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.box ul {
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
+.list-item {
+    width: 300px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.list-item h2 {
+    display: list-item;
+    list-style: inside decimal;
+} */
+
+/* .font-A ul li a {
+    font-size: 20px;
+}
+
+.font-A ul li a::before {
+    font-family: "Font Awesome 6 Brands";
+}
+
+.font-A ul li.facebook a::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 3px solid green;
+    border-radius: 3px;
+} */
+/* .font-A ul li.google::before {
+    content: "\f1a0";
+}
+.font-A ul li.twitter a::before {
+    content: "\f081";
+} */
+
+/* form {
+    display: flex;
+} */
+label {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+    margin-left: 50px;
+}
+
+form span::before {
+    position: absolute;
+    left: -25px;
+    top: 0px;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+}
+
+form input:checked + span::before {
+    display: inline-block;
+    content: "V";
+    color: greenyellow;
+}
+
+form label.disabled span::before {
+    border-color: antiquewhite;
+}
+
+form label.checked span::before {
+    display: inline-block;
+    content: "V";
+    color: antiquewhite;
+}

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: #2d323c;
+}
+
+/*  ===============COMMON============= */
+
+.container {
+    width: 1280px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+
+.header-content {
+    position: relative;
+    margin: 50px 70px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img {
+    width: 150px;
+}
+
+.header .nav > .list-items {
+    display: flex;
+    column-gap: 25px;
+    margin-left: 200px;
+}
+
+.header .nav > .list-items .item-link {
+    font-weight: 600;
+    padding: 0px 5px 35px;
+}
+
+.header .item-link i {
+    font-size: 1.3rem;
+    margin-left: 3px;
+}
+
+.header .more {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+/* dropdown */
+.dropdown {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ccc2b61c;
+    padding: 30px 30px 10px;
+    border-radius: 10px;
+    box-shadow: 0px -4px 15px 0 rgba(0, 0, 0, 0.108);
+    z-index: 1;
+}
+
+/* dropdown-left */
+.dropdown-left {
+    position: relative;
+    width: 35%;
+    height: 100%;
+}
+
+.dropdown-left::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #abbdd946;
+}
+
+.dropdown-left .group-item {
+    width: 50%;
+}
+
+.dropdown__heading-item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.dropdown .list-items {
+    display: flex;
+    column-gap: 100px;
+    margin-bottom: 20px;
+}
+
+.dropdown .list-items .item {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* dropdown-right */
+.dropdown-right {
+    padding-left: 40px;
+}
+
+.dropdown-right .list-items {
+    column-gap: 150px;
+}
+
+.hero img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    opacity: 0.15;
+}
+/* Item khi được hover */
+
+.header .nav > .list-items .item-link:hover,
+.hover {
+    color: #a2a6ae;
+    transition: 0.2s;
+}
+
+/* .header .hover:hover + .dropdown {
+    display: flex;
+} */

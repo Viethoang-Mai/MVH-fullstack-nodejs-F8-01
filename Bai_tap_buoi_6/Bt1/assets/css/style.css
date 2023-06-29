@@ -76,12 +76,12 @@ span {
     left: 0;
     width: 200px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.225);
+    display: none;
 }
 
 .submenu__item {
     padding: 13px 10px;
     border-bottom: 1px solid #bfbebe;
-    display: none;
 }
 
 .submenu__item::before {
@@ -111,6 +111,6 @@ span {
     transition: 0.2s;
 }
 
-.navigation .item:hover .submenu__item {
+.navigation .item:hover .submenu {
     display: block;
 }

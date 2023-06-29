@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #272626;
+}
+
+/*  ===============COMMON============= */
+
+.container {
+    width: 1280px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Service */
+.service__header {
+    text-align: center;
+}
+
+.service__header-heading {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 4.3rem;
+    font-weight: 600;
+}
+
+.service__header--desc {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.service__content {
+    margin-top: 30px;
+}
+
+.service__content--img img {
+    width: 120px;
+    height: 120px;
+}
+
+.service__content .list-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 30px;
+}
+
+.service__content .list-items .item {
+    flex-basis: calc(100% / 3 - 30px);
+    text-align: center;
+}
+
+.service__content--title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.service__content--desc {
+    min-height: 90px;
+    color: #474747;
+    margin-top: 15px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.service__btn .btn {
+    width: 120px;
+    height: 40px;
+    background: #29378e;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-family: inherit;
+}
+
+.service__btn .btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Reset Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+            integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>Shopping Card</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <section class="shopping-cart">
+                    <!-- cart__header -->
+                    <div class="cart__header">
+                        <h3 class="cart__header--title">Shopping Cart</h3>
+                        <a href="#!"
+                            ><i class="fa-solid fa-circle-xmark"></i
+                        ></a>
+                    </div>
+
+                    <!-- cart__body -->
+                    <div class="cart__body">
+                        <ul class="list-items">
+                            <!-- Item1 -->
+                            <li class="item">
+                                <div class="item__image">
+                                    <img
+                                        src="./assets/Img/14pro-tim-min.png"
+                                        alt="Iphone 14 Pro max"
+                                        class="item__image--img"
+                                    />
+                                </div>
+                                <div class="item__info">
+                                    <p class="item__info--desc">
+                                        Affinity Queen Poster Bed
+                                    </p>
+                                    <div class="item__info--row">
+                                        <div class="amount">
+                                            <a href="#!">
+                                                <i class="fa-solid fa-minus">
+                                                </i>
+                                            </a>
+                                            <span>1</span>
+                                            <a href="#!">
+                                                <i class="fa-solid fa-plus"></i
+                                            ></a>
+                                        </div>
+                                        <div class="price-item">1x $570</div>
+                                    </div>
+                                </div>
+                                <div class="item__cancel">
+                                    <a href="#!"
+                                        ><i class="fa-solid fa-xmark"></i
+                                    ></a>
+                                </div>
+                            </li>
+
+                            <!-- Item2 -->
+                            <li class="item">
+                                <div class="item__image">
+                                    <img
+                                        src="./assets/Img/airpods-Pro-min.png"
+                                        alt="Airpods Pro"
+                                        class="item__image--img"
+                                    />
+                                </div>
+                                <div class="item__info">
+                                    <p class="item__info--desc">
+                                        Affinity Queen Poster Bed
+                                    </p>
+                                    <div class="item__info--row">
+                                        <div class="amount">
+                                            <a href="#!">
+                                                <i class="fa-solid fa-minus">
+                                                </i>
+                                            </a>
+                                            <span>1</span>
+                                            <a href="#!">
+                                                <i class="fa-solid fa-plus"></i
+                                            ></a>
+                                        </div>
+                                        <div class="price-item">1x $570</div>
+                                    </div>
+                                </div>
+                                <div class="item__cancel">
+                                    <a href="#!"
+                                        ><i class="fa-solid fa-xmark"></i
+                                    ></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="cart__body--subtotal">
+                            <p class="subtotal">Subtotal</p>
+                            <p class="totalprice">$920.00</p>
+                        </div>
+                        <p class="cart__body--notice">
+                            Taxes and shipping calculated at checkout
+                        </p>
+                        <div class="cart__body--btn">
+                            <button class="view-cart btn">View Cart</button>
+                            <button class="add-to-cart btn">Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- cart__footer -->
+                    <div class="cart__footer">
+                        <div class="logo-shipping">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <p class="cart__footer--desc">
+                            Spend $ 499.00 to Free Shipping
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

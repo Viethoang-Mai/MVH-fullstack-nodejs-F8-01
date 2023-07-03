@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Nunito:wght@400;600&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Be+Vietnam+Pro", sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+/* .row {
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.item {
+    padding: 5px 10px;
+    background: red;
+    border: 1px solid #fff;
+    color: #fff;
+    Lấp đầy phần tử cha
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.item:nth-of-type(3) {
+    order: 1;
+}
+
+.item:nth-of-type(1) {
+    order: 2;
+}
+
+.item:nth-of-type(4) {
+    order: 3;
+}
+
+.item:nth-of-type(2) {
+    order: 4;
+} */
+
+/* .item:nth-of-type(2) {
+    flex-grow: 2;
+} */
+.header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header__heading {
+    font-size: 26px;
+}
+
+.header__heading > span {
+    color: #df2c60;
+}
+
+.underline span {
+    display: inline-block;
+    width: 25px;
+    height: 4px;
+    background: #df2c60;
+    border-radius: 999px;
+}
+.underline span:first-of-type,
+.underline span:last-of-type {
+    width: 40px;
+    height: 4px;
+    background: #df2c60;
+}
+
+.item__image {
+    padding: 10px;
+    text-align: center;
+    /* transform: translateY(-50%); */
+}
+
+.item__image img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px dotted blue;
+    transition: 0.3s linear;
+    background: #fff;
+}
+
+.list-items {
+    display: flex;
+    margin-top: 100px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 70px 30px;
+    counter-reset: item;
+}
+.item {
+    position: relative;
+    flex-basis: calc(100% / 3 - 30px);
+    /* border: 1px solid red; */
+    counter-increment: item;
+    box-shadow: 0px 0px 30px rgba(215, 228, 249, 0.5);
+}
+
+.item::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #6c8fe7;
+    transition: top 2s ease;
+    cursor: pointer;
+}
+
+.item:hover::before {
+    top: 0;
+    z-index: -1;
+}
+
+.item:hover {
+    color: aliceblue;
+}
+
+.item:hover img {
+    border-color: #fff;
+    transition-delay: 0.85s;
+    padding: 10px;
+}
+
+.item::after {
+    position: absolute;
+    content: "0" counter(item);
+    top: 50px;
+    right: 0;
+    color: #eef2fc;
+    font-size: 100px;
+    font-weight: 900;
+    z-index: -1;
+}
+
+.item__heading {
+    margin: 10px;
+    font-size: 20px;
+    color: #14368b;
+}
+
+.item__desc {
+    padding: 10px;
+    text-align: justify;
+    font-weight: 500;
+}

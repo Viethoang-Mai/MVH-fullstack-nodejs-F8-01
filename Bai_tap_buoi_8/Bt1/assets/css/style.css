@@ -48,9 +48,18 @@ a {
     margin-left: 200px;
 }
 
+.nav > .list-items .item-link::after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
 .header .nav > .list-items .item-link {
     font-weight: 600;
-    padding: 0px 5px 35px;
+    position: relative;
 }
 
 .header .item-link i {
@@ -67,9 +76,10 @@ a {
 
 /* dropdown */
 .dropdown {
-    display: flex;
+    /* display: flex; */
+    display: none;
     position: absolute;
-    top: 70px;
+    top: 65px;
     left: 0;
     width: 100%;
     background: #ccc2b61c;
@@ -142,6 +152,9 @@ a {
     transition: 0.2s;
 }
 
-/* .header .hover:hover + .dropdown {
+.header .nav .item:hover .dropdown {
     display: flex;
-} */
+}
+.dropdown .item a:hover {
+    text-decoration: underline #e58919;
+}

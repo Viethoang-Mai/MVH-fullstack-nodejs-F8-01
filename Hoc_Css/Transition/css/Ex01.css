@@ -1,0 +1,66 @@
+html {
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+}
+
+.box {
+    border: 1px solid red;
+    width: 500px;
+    padding: 20px;
+    /* height: 100px; */
+}
+
+.box h1 {
+    transition-property: padding-left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    /* transition-delay: 2s; */
+}
+
+.box h1:hover {
+    padding-left: 100px;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    /* transition: background 0.4 linear; */
+}
+span {
+    position: relative;
+    z-index: 1;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    background: rgba(255, 0, 0, 0.407);
+    transition: right 0.4s linear;
+}
+button::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 255, 0.415);
+    transition: left 0.4s linear;
+}
+
+button:hover::before {
+    right: 0;
+}
+button:hover::after {
+    left: 0;
+}

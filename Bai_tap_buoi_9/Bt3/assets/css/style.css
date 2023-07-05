@@ -28,7 +28,7 @@ option {
 /*  ===============COMMON============= */
 
 .container {
-    width: 860px;
+    width: 870px;
     max-width: calc(100% - 48px);
     margin: 50px auto;
     text-align: center;

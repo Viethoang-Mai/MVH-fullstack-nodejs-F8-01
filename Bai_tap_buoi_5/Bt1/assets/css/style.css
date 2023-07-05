@@ -220,9 +220,9 @@ i.fa-xmark {
 }
 
 /* Yêu cầu 4 */
-.form-group:hover {
+/* .form-group:hover {
     border-color: #0f0d0d;
-}
+} */
 
 .form .form-group:hover .label:first-of-type,
 .form .form-group:hover .label:last-of-type {

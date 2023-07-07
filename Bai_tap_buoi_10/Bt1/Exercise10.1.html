@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Reset Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+            integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>Menu</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="hero">
+                    <input
+                        class="top-left__input"
+                        type="checkbox"
+                        id="menu"
+                        hidden
+                    />
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <label for="menu" class="top-left__symbol">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="top-left__coating"></div>
+                    <!-- navigation -->
+                    <nav class="nav">
+                        <ul class="list-items">
+                            <!-- item1 -->
+                            <li class="item">
+                                <input type="radio"id="home" name="nav" hidden /
+                                >
+                                <label class="item-link" for="home">home</label>
+                            </li>
+                            <!-- item2 -->
+                            <li class="item">
+                                <input type="radio"id="about" name="nav" hidden/
+                                >
+                                <label class="item-link" for="about"
+                                    >about
+                                </label>
+                            </li>
+                            <!-- item3 -->
+                            <li class="item">
+                                <input type="radio"id="portfolio"hidden
+                                name="nav"/ >
+                                <label class="item-link" for="portfolio"
+                                    >portfolio</label
+                                >
+                            </li>
+                            <!-- item4 -->
+                            <li class="item">
+                                <input type="radio"id="contact" hidden
+                                name="nav"/ >
+                                <label class="item-link" for="contact"
+                                    >contact</label
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hero__content">
+                        <h2 class="hero__heading">#1 burger menu</h2>
+                        <p class="hero__desc">
+                            <span>inspired by</span> google material design
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

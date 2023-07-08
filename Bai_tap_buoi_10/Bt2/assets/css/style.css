@@ -26,6 +26,9 @@ a {
 }
 
 /* Options*/
+.nav {
+    position: relative;
+}
 .list-items {
     position: relative;
     display: flex;
@@ -54,19 +57,6 @@ a {
     color: aliceblue;
 }
 
-@keyframes item-info {
-    from {
-        transform: rotateX(0);
-    }
-    50% {
-        transform-origin: top;
-        transform: rotateX(-55deg);
-    }
-    to {
-        transform: rotateX(0);
-    }
-}
-
 .item__info {
     position: absolute;
     top: 52.3px;
@@ -76,12 +66,21 @@ a {
     border: 1px solid #eee;
     text-align: left;
     overflow-x: scroll;
-    transform-origin: top;
-    transition: 0.5s;
-    animation-delay: 0.1s;
-    animation-duration: 0.9s;
+    transform-origin: top left;
+    transition: 0.5s linear;
     opacity: 0;
-    animation-iteration-count: 1;
+    transform: rotateX(-90deg);
+}
+
+.item__info-pseudo {
+    position: absolute;
+    top: 52.3px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #eee;
+    text-align: left;
+    overflow-x: scroll;
 }
 
 .item__info--heading {
@@ -93,12 +92,11 @@ a {
     font-size: 1.5rem;
     width: 105%;
 }
-.item__info {
-}
+
 input:checked ~ .item__info {
-    animation-name: item-info;
-    opacity: 1;
+    transform: rotateX(0);
     z-index: 1;
+    opacity: 1;
 }
 input:checked ~ .item__link {
     background: #3499db;

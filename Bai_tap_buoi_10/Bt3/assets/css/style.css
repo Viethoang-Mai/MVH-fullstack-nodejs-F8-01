@@ -129,6 +129,7 @@ body {
     box-shadow: 0 0 70px 15px rgba(0, 0, 0, 0.879);
     transform: rotateX(83deg);
     transition: 0.25s;
+    transition-delay: 0.1s;
 }
 
 .main:hover .cover {
@@ -145,6 +146,6 @@ body {
     transform: translateY(50px);
 }
 
-.main:hover .shadow {
+.main:hover + .shadow {
     width: 80px;
 }

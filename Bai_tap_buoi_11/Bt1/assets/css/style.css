@@ -115,7 +115,7 @@ label {
     top: 98px;
     left: 0;
     flex-direction: column;
-    transition: 0.1s ease;
+    transition: 0.2s linear;
     transition-delay: 0.1s;
     opacity: 0;
     background: #fdf1f5;
@@ -245,17 +245,18 @@ label {
 }
 
 .hero-btn {
-    --height: 70px;
-    min-width: 176px;
+    --height: 60px;
+    min-width: 160px;
+    font-size: 1.5rem;
 }
 
 .play {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-right: 10px;
     text-align: center;
-    line-height: 70px;
+    line-height: 60px;
     background: #fff;
     box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.069);
     color: #fdc55e;
@@ -270,7 +271,7 @@ label {
 }
 
 .hero__info--bottom .desc {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -526,6 +527,12 @@ input[id="menu-bar"]:checked ~ main .hero {
     .cta__info--store {
         justify-content: flex-start;
     }
+    .hero__info--bottom .desc {
+        font-size: 1.6rem;
+    }
+    .cta-play {
+        margin-left: -30px;
+    }
 }
 /* ==========min-width: 992px========== */
 @media screen and (min-width: 992px) {
@@ -564,6 +571,11 @@ input[id="menu-bar"]:checked ~ main .hero {
     .feature__info--btn {
         text-align: left;
     }
+    .hero-btn {
+        --height: 65px;
+        min-width: 176px;
+        font-size: 1.7rem;
+    }
 }
 /* ==========min-width: 1200px========== */
 @media screen and (min-width: 1200px) {
@@ -579,9 +591,7 @@ input[id="menu-bar"]:checked ~ main .hero {
         --height: 70px;
         min-width: 200px;
     }
-    .cta-play {
-        margin-left: -30px;
-    }
+
     .feature__info {
         margin-top: 180px;
     }

@@ -1,0 +1,33 @@
+/*Comment css*/
+// Biến trong scss
+$primaryColor: blueviolet;
+.menu {
+    > li {
+        > a {
+            display: block;
+            &:hover {
+                color: $primaryColor;
+                text-decoration: none;
+                &::after {
+                    content: "";``
+                }
+            }
+            &::before {
+                content: "";
+            }
+        }
+    }
+}
+
+.footer {
+    $property-padding: padding;
+    $selector: ".text";
+    #{$property-padding}: 10px;
+    $size: 18;
+    $width: 50;
+    #{$selector} {
+        font-style: italic;
+        font-size: #{$size}rem;
+        width: $width * 1%;
+    }
+}

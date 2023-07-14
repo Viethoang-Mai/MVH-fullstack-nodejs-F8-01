@@ -1,0 +1,25 @@
+/*Comment css*/
+.menu > li > a {
+  display: block;
+}
+.menu > li > a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+.menu > li > a:hover::after {
+  content: "";
+}
+.menu > li > a::before {
+  content: "";
+}
+
+.footer {
+  padding: 10px;
+}
+.footer .text {
+  font-style: italic;
+  font-size: 18rem;
+  width: 50%;
+}
+
+/*# sourceMappingURL=Ex01.css.map */

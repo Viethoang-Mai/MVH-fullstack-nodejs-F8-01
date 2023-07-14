@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 50px auto;
+}
+.box {
+    width: 300px;
+    padding: 10px;
+    background: radial-gradient(circle, red 10%, green 50%, blue 100%);
+    color: #fff;
+    box-shadow: 0 0 10px 5px red;
+}

@@ -95,6 +95,9 @@ button {
             border-radius: 12px;
             font-weight: 900;
             label {
+                &:hover {
+                    cursor: pointer;
+                }
                 width: 50%;
             }
             label:first-of-type {

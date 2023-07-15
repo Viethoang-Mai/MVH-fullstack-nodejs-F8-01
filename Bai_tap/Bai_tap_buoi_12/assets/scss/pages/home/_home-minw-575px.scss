@@ -1,0 +1,22 @@
+@media screen and (min-width: 575px) {
+    .container {
+        --container-width: 95%;
+        .landing-content__info {
+            .heading {
+                font-size: 10.4rem;
+            }
+            .tab-switch {
+                display: inline-flex;
+                margin-top: 40px;
+
+                label {
+                    width: 180px;
+                }
+            }
+        }
+        .landing-form {
+            margin-top: 80px;
+            padding: 60px;
+        }
+    }
+}

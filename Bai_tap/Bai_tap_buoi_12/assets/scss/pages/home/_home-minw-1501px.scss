@@ -1,0 +1,25 @@
+@media screen and (min-width: 1501px) {
+    .landing {
+        .container {
+            --container-width: 1450px;
+        }
+        .lading__circle {
+            display: block;
+            position: absolute;
+            width: 64%;
+            height: 140%;
+            border-radius: 50%;
+            background: url("../img/dot-texture.png") repeat 0 0 #fff;
+            top: -20%;
+            right: -32%;
+            pointer-events: none;
+        }
+    }
+    .landing-form__login,
+    .landing-form__register {
+        right: 15% !important;
+    }
+    .landing-form__login {
+        margin-top: 100px !important;
+    }
+}

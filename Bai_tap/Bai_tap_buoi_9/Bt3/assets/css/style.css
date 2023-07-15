@@ -127,7 +127,7 @@ label {
     transform: scale(0.86) translateY(50%);
     background-color: #efaaee;
 }
-.form__textarea textarea:focus + label,
+/* .form__textarea textarea:focus + label,
 .form__textarea textarea:not(:placeholder-shown) + label {
     top: -25px;
-}
+} */

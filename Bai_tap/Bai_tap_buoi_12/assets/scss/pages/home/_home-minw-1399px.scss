@@ -1,0 +1,68 @@
+@media screen and (min-width: 1399px) {
+    .landing {
+        position: fixed;
+        .container {
+            --container-width: 1300px;
+        }
+
+        input[id="login"] {
+            &:checked ~ .landing-content .landing-form__login {
+                transform: translate(0);
+                visibility: visible;
+                opacity: 1;
+                z-index: 2;
+            }
+            &:checked ~ .landing-content .landing-form__register {
+                transform: translate(50%);
+                opacity: 0;
+                z-index: 1;
+                visibility: hidden;
+            }
+        }
+
+        input[id="register"] {
+            &:checked ~ .landing-content .landing-form__login {
+                transform: translate(50%, 0);
+                opacity: 0;
+                z-index: 1;
+                visibility: hidden;
+            }
+            &:checked ~ .landing-content .landing-form__register {
+                transform: translate(0%);
+                opacity: 1;
+                z-index: 2;
+                visibility: visible;
+            }
+        }
+        .landing-content__info {
+            margin: 84px 0 0 20px;
+            .desc {
+                font-family: Rajdhani, sans-serif;
+                line-height: 1.4;
+                font-size: 1.8rem;
+                display: block;
+                width: 384px;
+                margin: 10px auto 0;
+            }
+        }
+
+        .landing-form {
+            margin: 30px auto 0;
+            padding: 60px;
+            display: block;
+            .jet-plane {
+                display: block;
+            }
+        }
+        .landing-form__login,
+        .landing-form__register {
+            position: absolute;
+            transition: 0.5s ease-in-out;
+            right: 5%;
+            display: block;
+        }
+        .landing-form__login {
+            margin-top: 50px;
+        }
+    }
+}

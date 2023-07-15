@@ -15,6 +15,9 @@
             pointer-events: none;
         }
     }
+    .landing-form {
+        box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.323);
+    }
     .landing-form__login,
     .landing-form__register {
         right: 15% !important;

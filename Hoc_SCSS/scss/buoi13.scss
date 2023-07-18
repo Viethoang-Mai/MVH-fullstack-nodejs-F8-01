@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+    font-style: italic;
+}
+h2 {
+    @extend h1;
+}
+@import "./mixins";
+
+// .box {
+//     @include size(200px);
+//     background: #ccc;
+//     @include flexCenter;
+// }
+.content {
+    @include gridContainer(5, 20px);
+}

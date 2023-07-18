@@ -1,0 +1,13 @@
+@import "./mixins";
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    @include gridContainer(3, 20px);
+
+    .card {
+        background: greenyellow;
+        padding: 20px;
+    }
+}

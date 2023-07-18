@@ -34,6 +34,14 @@ input {
   margin: 0 auto;
   padding: 0 54px 67px 0;
 }
+.wrapper-inner .overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(204, 204, 204, 0.631372549);
+  z-index: -1;
+  opacity: 0;
+  transition: 0.25s ease;
+}
 .wrapper-inner .sidebar {
   grid-area: Sidebar;
   padding: 54px 0 0 58px;
@@ -224,9 +232,6 @@ input {
   }
 }
 @media screen and (max-width: 992px) {
-  .wrapper-inner {
-    width: 100%;
-  }
   .sidebar .heading {
     font-size: 3.4rem;
   }
@@ -250,9 +255,15 @@ input {
     grid-template-areas: "header header header header header" "sidebar sidebar sidebar sidebar sidebar" "main main main main main" "main main main main main" "main main main main main" "main main main main main";
   }
   .wrapper-inner > input:checked ~ .header .menu-burger {
+    display: flex;
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(0);
     visibility: visible;
+    z-index: 1;
+  }
+  .wrapper-inner > input:checked + .overlay {
+    opacity: 1;
+    z-index: 1;
   }
   .wrapper .sidebar {
     grid-area: sidebar;
@@ -271,13 +282,13 @@ input {
   }
   .wrapper .header .menu-burger {
     width: auto;
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 10px;
     background: #f4de4d;
     transition: 0.45s ease;
     border-radius: 12px;
-    transform: translateX(50%);
+    transform: translate(100%, 0);
     visibility: hidden;
     opacity: 0;
   }
@@ -316,14 +327,23 @@ input {
     margin-left: -10px;
     flex-direction: row;
     justify-content: center;
-    margin-left: -50px;
+    padding: 50px 0 30px;
   }
   .wrapper .sidebar .nav > * {
     width: calc(25% - 10px);
     margin-left: 10px;
   }
+  .wrapper .sidebar .logo {
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
   .wrapper .sidebar .heading {
-    display: none;
+    font-size: 2.4rem;
+    position: absolute;
+    margin: 0;
+    top: 50px;
+    left: 50%;
   }
   .wrapper .sidebar .nav-item {
     justify-content: center;
@@ -331,7 +351,7 @@ input {
   .wrapper .sidebar .help {
     position: absolute;
     bottom: 0;
-    left: 30px;
+    right: 0;
   }
   .wrapper .sidebar .help-link {
     column-gap: 10px;
@@ -349,6 +369,16 @@ input {
   .wrapper .header .burger {
     z-index: 2;
     display: flex;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sidebar .nav {
+    column-gap: 30px;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+  }
+  .sidebar .nav .nav-item {
+    display: block;
   }
 }
 

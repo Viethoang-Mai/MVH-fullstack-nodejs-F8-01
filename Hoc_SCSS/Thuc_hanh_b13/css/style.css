@@ -60,7 +60,7 @@ input {
   row-gap: 20px;
 }
 .wrapper-inner .sidebar .nav .nav-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   column-gap: 13px;
   font-weight: 600;
@@ -323,15 +323,15 @@ input {
   .wrapper .sidebar .nav {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
-    margin-left: -10px;
+    row-gap: 5px;
+    margin-left: -5px;
     flex-direction: row;
-    justify-content: center;
     padding: 50px 0 30px;
+    justify-content: center;
   }
   .wrapper .sidebar .nav > * {
-    width: calc(25% - 10px);
-    margin-left: 10px;
+    width: calc(25% - 5px);
+    margin-left: 5px;
   }
   .wrapper .sidebar .logo {
     position: absolute;
@@ -347,6 +347,8 @@ input {
   }
   .wrapper .sidebar .nav-item {
     justify-content: center;
+    flex-shrink: 0;
+    width: 150px !important;
   }
   .wrapper .sidebar .help {
     position: absolute;
@@ -376,6 +378,7 @@ input {
     column-gap: 30px;
     flex-wrap: nowrap !important;
     overflow-x: auto;
+    justify-content: flex-start !important;
   }
   .sidebar .nav .nav-item {
     display: block;

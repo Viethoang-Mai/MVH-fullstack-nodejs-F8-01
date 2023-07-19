@@ -62,7 +62,7 @@ input {
                 flex-direction: column;
                 row-gap: 20px;
                 .nav-item {
-                    display: inline-flex;
+                    display: flex;
                     align-items: center;
                     column-gap: 13px;
                     font-weight: 600;
@@ -350,10 +350,10 @@ input {
 
             font-size: 1.5rem;
             .nav {
-                @include gridContainer(4, 10px);
+                @include gridContainer(4, 5px);
                 flex-direction: row;
-                justify-content: center;
                 padding: 50px 0 30px;
+                justify-content: center;
             }
             .logo {
                 position: absolute;
@@ -371,6 +371,8 @@ input {
             }
             .nav-item {
                 justify-content: center;
+                flex-shrink: 0;
+                width: 150px !important;
             }
             .help {
                 position: absolute;
@@ -403,6 +405,7 @@ input {
             column-gap: 30px;
             flex-wrap: nowrap !important;
             overflow-x: auto;
+            justify-content: flex-start !important;
             .nav-item {
                 display: block;
             }

@@ -1,0 +1,11 @@
+@import "parts/variables";
+@import "parts/reset";
+@import "parts/base";
+@import "parts/mixins";
+
+// import layout
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/hero";
+@import "layouts/_stats";
+@import "layouts/products";

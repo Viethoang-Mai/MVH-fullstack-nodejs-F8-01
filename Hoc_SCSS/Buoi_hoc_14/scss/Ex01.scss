@@ -1,0 +1,38 @@
+// $columnNumber: 12;
+
+// @for $i from 1 through $columnNumber {
+//     .col-#{$i} {
+//         --column-number: #{$i};
+//         padding: 0 $i * 2px;
+//     }
+// }
+
+// Vong lap each
+// $sizes: 0, 25, 50, 75, 100;
+// @each $size in $sizes {
+//     .w-#{$size} {
+//         @if $size == 0 {
+//             width: $size;
+//         } @else {
+//             width: $size * 1%;
+//         }
+//     }
+// }
+
+// $sizes: (small, 20, 10, 50), (medium, 40, 20, 10), (large, 60, 30, 30);
+// @each $name, $size, $padding in $sizes {
+//     .col-#{$name} {
+//         width: #{$size}px;
+//         padding: #{$padding}px;
+//     }
+// }
+// $sizes: (
+//     small: 20,
+//     medium: 20,
+//     large: 20,
+// );
+// @each $name, $size in $sizes {
+//     .col-#{$name} {
+//         width: #{$size}px;
+//     }
+// }

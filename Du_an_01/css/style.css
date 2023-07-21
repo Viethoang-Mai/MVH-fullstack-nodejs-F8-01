@@ -1,0 +1,509 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 5000px;
+  font-size: 1.6rem;
+  color: #2c2c2c;
+  line-height: 1.2;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.container {
+  --container-width: 1440px;
+}
+
+.margin-ct {
+  margin: 0 auto;
+}
+
+.btn {
+  min-width: 213px;
+  height: 56px;
+  border-radius: 8px;
+  background: #46b20f;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #e05000;
+}
+
+.header {
+  padding: 20px 0;
+  box-shadow: -13px 0px 11px 0px rgba(0, 0, 0, 0.15);
+}
+.header label {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 2rem;
+}
+.header .overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.737254902);
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s linear;
+  visibility: hidden;
+  transition-property: visibility, opacity;
+}
+.header .header-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.header .header-menu ul li a {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 42px;
+  margin: 0 30px;
+}
+.header .header-menu ul li a.active, .header .header-menu ul li a:hover {
+  color: #46b20f;
+  border-bottom: 2px solid #46b20f;
+}
+.header .header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-icon .cart-icon {
+  position: relative;
+}
+.header .header-icon .cart-icon span {
+  position: absolute;
+  background: #e05000;
+  right: -7px;
+  top: -6px;
+  color: #fff;
+  padding: 0 4px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1399px) {
+  .container {
+    --container-width: 1300px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    --container-width: 1100px;
+  }
+  .header .header-menu ul li a {
+    font-size: 1.8rem;
+    margin: 0 23px;
+  }
+  .header .col-xl-1 {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    --container-width: 990px;
+  }
+  .header .header-menu ul {
+    justify-content: center;
+  }
+  .header .header-menu ul li a {
+    font-size: 1.7rem;
+    margin: 0 14px;
+  }
+  .header .header-icon .cart-icon {
+    margin-left: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    --container-width: 760px;
+  }
+  .header #burger:checked ~ .header-menu {
+    transform: translate(0);
+  }
+  .header #burger:checked ~ .overlay {
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+  }
+  .header label {
+    display: inline-block;
+  }
+  .header .header-menu {
+    transform: translateX(-100%);
+    transition: 0.4s linear;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #f0f8ed;
+    min-width: 290px;
+    z-index: 1;
+  }
+  .header .header-menu ul {
+    display: block;
+    text-align: left;
+    padding: 100px 25px 25px;
+  }
+  .header .header-menu ul li {
+    margin-top: 50px;
+  }
+  .header .header-menu ul li a {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+  .header .col-md-4:nth-of-type(2) {
+    text-align: right;
+    order: 3;
+  }
+  .header .col-md-4:nth-of-type(3) {
+    order: 2;
+  }
+  .header .header-icon {
+    display: flex;
+  }
+  .header .header-icon .cart-icon {
+    order: 2;
+    margin: 0;
+  }
+}
+.hero .hero-info .heading {
+  font-size: 5.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.hero .hero-info .heading span {
+  font-size: 4.4rem;
+  line-height: 2;
+}
+.hero .hero-info .desc {
+  width: 539px;
+  height: 102px;
+  margin-top: 32px;
+}
+.hero .hero-media .background {
+  width: 135%;
+  height: 850px;
+  background: #dcffca;
+  position: relative;
+}
+.hero .hero-media .background img {
+  position: absolute;
+  top: 0;
+  left: -160px;
+}
+.hero .hero-media .background span {
+  position: absolute;
+  font-weight: 800;
+  font-size: 20rem;
+  color: rgba(34, 96, 0, 0.2039215686);
+  right: 80px;
+  top: 13px;
+  transform-origin: bottom;
+  transform: rotate(90deg);
+  line-height: 1;
+}
+
+.stats {
+  margin-top: 120px;
+}
+.stats .stats-header {
+  text-align: center;
+}
+.stats .stats-header .heading {
+  max-width: 670px;
+  font-size: 3.8rem;
+  font-weight: 800;
+}
+.stats .stats-header .desc {
+  max-width: 772px;
+  margin-top: 30px;
+}
+.stats .stats-body {
+  position: relative;
+}
+.stats .stats-body::after, .stats .stats-body::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 282px;
+  height: 282px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.stats .stats-body::before {
+  background: #dcffca;
+  left: 48px;
+  top: -142px;
+}
+.stats .stats-body::after {
+  background: #ffd5bd;
+  bottom: -142px;
+  right: 48px;
+}
+.stats .stats-body > .row {
+  --column-space: 42px;
+  margin-top: 171px;
+}
+.stats .stats-body .item {
+  cursor: pointer;
+  background: #fff;
+  transition: 0.25s ease-in-out;
+  padding: 40px 0 71px 40px;
+  box-shadow: -7px 10px 87px 0px rgba(54, 54, 54, 0.12);
+}
+.stats .stats-body .item .item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  transition: 0.25s ease-in-out;
+  background: #fff0e7;
+}
+.stats .stats-body .item .stats-number {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: 5.2rem;
+  font-weight: 800;
+}
+.stats .stats-body .item .stats-desc {
+  height: 74px;
+  margin-top: 29px;
+  font-size: 2.4rem;
+}
+.stats .stats-body .item:hover {
+  transform: scale(1.1);
+}
+.stats .stats-body .item:hover .item-img {
+  background: #f2ffec;
+}
+
+.product {
+  margin-top: 290px;
+  text-align: center;
+}
+.product .product-header .heading-product {
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin-bottom: 62px;
+}
+.product .col-3 .item .item-img {
+  margin: 0 auto;
+  width: 100%;
+  height: 275px;
+  border-radius: 50%;
+  background: #ffba94;
+  position: relative;
+}
+.product .col-3 .item .item-img img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -105px;
+}
+.product .col-3:nth-of-type(2) .item-img {
+  background: #c5ffa8;
+}
+.product .product-up {
+  margin-bottom: 120px;
+}
+.product .product-up > .row {
+  --column-space: 100px;
+}
+.product .product-down > .row {
+  --column-space: 100px;
+}
+.product .heading {
+  margin-top: 124.4px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  position: relative;
+}
+.product .heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 49px;
+  height: 2px;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #a3a3a3;
+}
+.product .text {
+  margin-top: 35.37px;
+  font-size: 2rem;
+  color: #656565;
+}
+.product .price {
+  margin-top: 8px;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 32px;
+}
+.product .price span {
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.header {
+    padding: 20px 0;
+    &-inner {
+        z-index: 1;
+        @media screen and (max-width: 768px) {
+            padding: auto;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        padding: auto;
+    }
+}

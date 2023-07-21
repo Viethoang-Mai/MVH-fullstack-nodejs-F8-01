@@ -1,0 +1,21 @@
+.container {
+    --container-width: 1440px;
+}
+.margin-ct {
+    margin: 0 auto;
+}
+
+.btn {
+    min-width: 213px;
+    height: 56px;
+    border-radius: 8px;
+    background: $primaryColor;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background: $secondColor;
+    }
+}

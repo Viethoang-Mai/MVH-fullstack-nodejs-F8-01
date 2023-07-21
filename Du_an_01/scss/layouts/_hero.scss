@@ -1,0 +1,42 @@
+.hero {
+    .hero-info {
+        .heading {
+            font-size: 5.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            span {
+                font-size: 4.4rem;
+                line-height: 2;
+            }
+        }
+        .desc {
+            width: 539px;
+            height: 102px;
+            margin-top: 32px;
+        }
+    }
+    .hero-media {
+        .background {
+            width: 135%;
+            height: 850px;
+            background: #dcffca;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: -160px;
+            }
+            span {
+                position: absolute;
+                font-weight: 800;
+                font-size: 20rem;
+                color: #22600034;
+                right: 80px;
+                top: 13px;
+                transform-origin: bottom;
+                transform: rotate(90deg);
+                line-height: 1;
+            }
+        }
+    }
+}

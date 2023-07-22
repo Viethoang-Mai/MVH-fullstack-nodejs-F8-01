@@ -311,6 +311,11 @@ table {
     margin: 0;
   }
 }
+@media screen and (max-width: 575px) {
+  .header .header-icon {
+    justify-content: space-around;
+  }
+}
 .hero .container .row {
   margin: 0;
 }
@@ -476,7 +481,7 @@ table {
     margin-top: 50px;
   }
   .hero .hero-info .heading {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .hero .hero-info .heading span {
     display: inline-block;
@@ -564,7 +569,6 @@ table {
   background: #fff;
   width: 353px;
   height: 405px;
-  box-shadow: -7px 10px 87px 0px rgba(54, 54, 54, 0.12);
   cursor: pointer;
   transition: 0.25s ease-in-out;
   padding: 40px 0 71px 40px;
@@ -601,8 +605,14 @@ table {
 
 @media screen and (max-width: 1900px) {
   .stats .stats-body .item {
+    width: 350px;
+    height: 405px;
+  }
+}
+@media screen and (max-width: 1499px) {
+  .stats .stats-body .item {
     width: 300px;
-    height: 452px;
+    height: 405px;
   }
 }
 @media screen and (max-width: 1399px) {
@@ -649,16 +659,15 @@ table {
     font-size: 3.5rem;
   }
   .stats .stats-body .item .stats-desc {
-    margin: 0 auto;
     font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 767px) {
   .stats .stats-header .heading {
-    font-size: 2.5rem;
+    font-size: 3.4rem;
   }
   .stats .stats-header .desc {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 30px;
   }
   .stats .stats-body .row {
@@ -668,11 +677,17 @@ table {
     margin-bottom: 50px;
   }
   .stats .stats-body .col-4::before {
-    width: 140px !important;
-    height: 140px !important;
-    left: 30% !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .stats .stats-body .col-4:first-of-type::before {
+    left: 40% !important;
+  }
+  .stats .stats-body .col-4:last-of-type::before {
+    right: 40% !important;
   }
   .stats .stats-body .item {
+    background: linear-gradient(90deg, rgb(255, 213, 189) 2%, rgb(220, 255, 202) 96%);
     margin: auto;
     text-align: center;
     width: 510px;
@@ -684,6 +699,7 @@ table {
     font-size: 3.5rem;
   }
   .stats .stats-body .item .stats-desc {
+    margin: 0 auto;
     font-size: 1.7rem;
     max-width: 90%;
     margin-top: 20px;
@@ -698,13 +714,13 @@ table {
     height: 250px;
   }
   .stats .stats-body .item .stats-number {
-    margin-top: 0px;
+    margin-top: 10px;
     font-size: 3.5rem;
   }
   .stats .stats-body .item .stats-desc {
     font-size: 1.7rem;
     max-width: 90%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -726,7 +742,8 @@ table {
 .product-up, .product-down {
   display: flex;
   margin-bottom: 120px;
-  column-gap: 100px;
+  flex-wrap: wrap;
+  gap: 100px;
   justify-content: center;
 }
 .product-up .item .item-img, .product-down .item .item-img {
@@ -777,6 +794,54 @@ table {
 .product .price span {
   font-weight: 600;
   font-size: 2.8rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .product-up, .product-down {
+    column-gap: 200px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .product {
+    margin-top: 200px;
+  }
+  .product .product-header .heading-product {
+    font-size: 3.4rem;
+  }
+  .product-up, .product-down {
+    column-gap: 150px;
+  }
+  .product-up .item .item-img, .product-down .item .item-img {
+    width: 250px;
+    height: 250px;
+  }
+  .product-up .heading, .product-down .heading {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product .product-header .heading-product {
+    font-size: 3.4rem;
+    font-weight: 800;
+    margin-bottom: 62px;
+  }
+  .product-up, .product-down {
+    column-gap: 100px;
+  }
+  .product-up .item .item-img, .product-down .item .item-img {
+    width: 200px;
+    height: 200px;
+  }
+  .product-up .price,
+  .product-up .text, .product-down .price,
+  .product-down .text {
+    font-size: 1.8rem;
+  }
+  .product-up .price span,
+  .product-up .text span, .product-down .price span,
+  .product-down .text span {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

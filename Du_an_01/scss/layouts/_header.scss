@@ -58,8 +58,7 @@
         }
     }
 }
-@media screen and (max-width: 1399px) {
-}
+
 @media screen and (max-width: 1199px) {
     .header {
         .header-menu {
@@ -150,6 +149,13 @@
                 order: 2;
                 margin: 0;
             }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .header {
+        .header-icon {
+            justify-content: space-around;
         }
     }
 }

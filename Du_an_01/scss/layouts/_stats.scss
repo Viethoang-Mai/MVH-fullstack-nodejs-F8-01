@@ -50,7 +50,7 @@
             background: #fff;
             width: 353px;
             height: 405px;
-            box-shadow: -7px 10px 87px 0px rgba(54, 54, 54, 0.12);
+
             cursor: pointer;
             transition: 0.25s ease-in-out;
             padding: 40px 0 71px 40px;
@@ -92,8 +92,18 @@
     .stats {
         .stats-body {
             .item {
+                width: 350px;
+                height: 405px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1499px) {
+    .stats {
+        .stats-body {
+            .item {
                 width: 300px;
-                height: 452px;
+                height: 405px;
             }
         }
     }
@@ -162,7 +172,6 @@
                         font-size: 3.5rem;
                     }
                     &-desc {
-                        margin: 0 auto;
                         font-size: 1.7rem;
                     }
                 }
@@ -174,10 +183,10 @@
     .stats {
         .stats-header {
             .heading {
-                font-size: 2.5rem;
+                font-size: 3.4rem;
             }
             .desc {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 margin-top: 30px;
             }
         }
@@ -188,13 +197,27 @@
 
             .col-4 {
                 &::before {
-                    width: 140px !important;
-                    height: 140px !important;
-                    left: 30% !important;
+                    width: 200px !important;
+                    height: 200px !important;
                 }
                 margin-bottom: 50px;
             }
+            .col-4:first-of-type {
+                &::before {
+                    left: 40% !important;
+                }
+            }
+            .col-4:last-of-type {
+                &::before {
+                    right: 40% !important;
+                }
+            }
             .item {
+                background: linear-gradient(
+                    90deg,
+                    rgba(255, 213, 189, 1) 2%,
+                    rgba(220, 255, 202, 1) 96%
+                );
                 margin: auto;
                 text-align: center;
                 width: 510px;
@@ -206,6 +229,8 @@
                         font-size: 3.5rem;
                     }
                     &-desc {
+                        margin: 0 auto;
+
                         font-size: 1.7rem;
                         max-width: 90%;
                         margin-top: 20px;
@@ -228,13 +253,13 @@
                 height: 250px;
                 .stats {
                     &-number {
-                        margin-top: 0px;
+                        margin-top: 10px;
                         font-size: 3.5rem;
                     }
                     &-desc {
                         font-size: 1.7rem;
                         max-width: 90%;
-                        margin-top: 20px;
+                        margin-top: 10px;
                     }
                 }
             }

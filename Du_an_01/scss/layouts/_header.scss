@@ -27,7 +27,7 @@
                 a {
                     font-weight: 600;
                     font-size: 2rem;
-                    padding-bottom: 42px;
+                    padding-bottom: 52px;
                     margin: 0 30px;
                     &.active {
                         color: $primaryColor;
@@ -59,14 +59,8 @@
     }
 }
 @media screen and (max-width: 1399px) {
-    .container {
-        --container-width: 1300px;
-    }
 }
 @media screen and (max-width: 1199px) {
-    .container {
-        --container-width: 1100px;
-    }
     .header {
         .header-menu {
             ul {
@@ -85,9 +79,6 @@
 }
 
 @media screen and (max-width: 991px) {
-    .container {
-        --container-width: 990px;
-    }
     .header {
         .header-menu {
             ul {
@@ -109,9 +100,6 @@
 }
 
 @media screen and (max-width: 767px) {
-    .container {
-        --container-width: 760px;
-    }
     .header {
         #burger:checked ~ .header-menu {
             transform: translate(0);
@@ -143,7 +131,7 @@
                 li {
                     margin-top: 50px;
                     a {
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                         padding-bottom: 10px;
                     }
                 }

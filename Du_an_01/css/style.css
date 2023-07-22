@@ -214,7 +214,7 @@ table {
 .header .header-menu ul li a {
   font-weight: 600;
   font-size: 2rem;
-  padding-bottom: 42px;
+  padding-bottom: 52px;
   margin: 0 30px;
 }
 .header .header-menu ul li a.active, .header .header-menu ul li a:hover {
@@ -239,15 +239,7 @@ table {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1399px) {
-  .container {
-    --container-width: 1300px;
-  }
-}
 @media screen and (max-width: 1199px) {
-  .container {
-    --container-width: 1100px;
-  }
   .header .header-menu ul li a {
     font-size: 1.8rem;
     margin: 0 23px;
@@ -257,9 +249,6 @@ table {
   }
 }
 @media screen and (max-width: 991px) {
-  .container {
-    --container-width: 990px;
-  }
   .header .header-menu ul {
     justify-content: center;
   }
@@ -272,9 +261,6 @@ table {
   }
 }
 @media screen and (max-width: 767px) {
-  .container {
-    --container-width: 760px;
-  }
   .header #burger:checked ~ .header-menu {
     transform: translate(0);
   }
@@ -307,7 +293,7 @@ table {
     margin-top: 50px;
   }
   .header .header-menu ul li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 10px;
   }
   .header .col-md-4:nth-of-type(2) {
@@ -325,6 +311,9 @@ table {
     margin: 0;
   }
 }
+.hero .container .row {
+  margin: 0;
+}
 .hero .hero-info .heading {
   font-size: 5.2rem;
   font-weight: 800;
@@ -338,24 +327,28 @@ table {
   width: 539px;
   margin-top: 32px;
 }
+.hero .hero-media {
+  padding: 0 !important;
+}
 .hero .hero-media .background {
   border-radius: 20px 0 0 20px;
   display: flex;
   align-items: center;
-  width: 134%;
+  width: 50vw;
   height: 850px;
   background: #dcffca;
   position: relative;
 }
 .hero .hero-media .background img {
   position: relative;
-  left: -19.3%;
+  left: -15.3%;
 }
 .hero .hero-media .background span {
   position: absolute;
   font-weight: 800;
-  font-size: 20rem;
-  color: rgba(34, 96, 0, 0.2039215686);
+  font-size: 18rem;
+  color: #226000;
+  opacity: 0.15;
   top: 7.1%;
   left: 96.6%;
   transform-origin: top left;
@@ -363,16 +356,53 @@ table {
   line-height: 1;
 }
 
+@media screen and (max-width: 1799px) {
+  .hero .hero-media .background img {
+    width: 780px;
+    left: -16%;
+  }
+  .hero .hero-media .background span {
+    left: 98%;
+    font-size: 17rem;
+  }
+}
+@media screen and (max-width: 1599px) {
+  .hero .hero-media .background {
+    height: 650px;
+  }
+  .hero .hero-media .background img {
+    width: 650px;
+    left: -16%;
+  }
+  .hero .hero-media .background span {
+    left: 97.6%;
+    font-size: 14rem;
+  }
+}
 @media screen and (max-width: 1399px) {
   .hero .hero-media .background {
     height: 650px;
   }
   .hero .hero-media .background img {
-    left: -22%;
+    left: -25%;
   }
   .hero .hero-media .background span {
     left: 97.6%;
     font-size: 14rem;
+  }
+  .hero .hero-info {
+    margin-top: -50px;
+  }
+  .hero .hero-info .heading {
+    font-size: 5rem;
+  }
+  .hero .hero-info .heading span {
+    font-size: 3.5rem;
+  }
+  .hero .hero-info .desc {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    width: 460px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -390,26 +420,26 @@ table {
     font-size: 12rem;
   }
   .hero .hero-info .heading {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
   .hero .hero-info .heading span {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .hero .hero-info .desc {
     margin-top: 25px;
     font-size: 1.5rem;
-    width: 460px;
+    width: 90%;
   }
 }
 @media screen and (max-width: 991px) {
   .hero .hero-media .background {
-    height: 500px;
+    height: 450px;
   }
   .hero .hero-media .background img {
-    left: -26%;
+    left: -20%;
   }
   .hero .hero-media .background span {
-    font-size: 9rem;
+    font-size: 8rem;
   }
   .hero .hero-info .heading {
     font-size: 3.5rem;
@@ -421,22 +451,19 @@ table {
     margin-bottom: 10px;
   }
   .hero .hero-info .desc {
-    font-size: 1.3rem;
-    width: 410px;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 767px) {
   .container {
-    --container-padding: 15px;
+    --container-padding: 20px;
   }
   .hero .hero-media .background {
-    border-radius: 20px;
-    width: 110%;
-    height: 500px;
     flex-direction: column;
     justify-content: space-evenly;
   }
   .hero .hero-media .background img {
+    margin-top: -50px;
     position: static;
   }
   .hero .hero-media .background span {
@@ -454,25 +481,22 @@ table {
   .hero .hero-info .heading span {
     display: inline-block;
     line-height: 1.2;
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
   }
   .hero .hero-info .desc {
-    font-size: 1.3rem;
     width: 100%;
     margin-top: 25px;
   }
 }
 @media screen and (max-width: 575px) {
   .hero .hero-media .background {
+    border-radius: 20px;
     width: 100%;
     height: 650px;
   }
-  .hero .hero-media .background img {
-    margin-top: -60px;
-  }
   .hero .hero-media .background span {
-    font-size: 9rem;
+    font-size: 8rem;
   }
   .hero .hero-info {
     text-align: center;
@@ -484,11 +508,9 @@ table {
     display: inline-block;
     line-height: 1.2;
     font-size: 2.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .hero .hero-info .desc {
-    font-size: 1.4rem;
-    width: 90%;
     margin: 30px auto;
     line-height: 1.4;
   }

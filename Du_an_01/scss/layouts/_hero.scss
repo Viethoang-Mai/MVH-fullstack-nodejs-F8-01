@@ -122,9 +122,13 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .container {
+        --container-padding: 15px;
+    }
     .hero {
         .hero-media {
             .background {
+                border-radius: 20px;
                 width: 110%;
                 height: 500px;
                 flex-direction: column;

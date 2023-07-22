@@ -11,31 +11,184 @@
         }
         .desc {
             width: 539px;
-            height: 102px;
             margin-top: 32px;
         }
     }
     .hero-media {
         .background {
-            width: 135%;
+            border-radius: 20px 0 0 20px;
+            display: flex;
+            align-items: center;
+            width: 134%;
             height: 850px;
             background: #dcffca;
             position: relative;
             img {
-                position: absolute;
-                top: 0;
-                left: -160px;
+                position: relative;
+                left: -19.3%;
             }
             span {
                 position: absolute;
                 font-weight: 800;
                 font-size: 20rem;
                 color: #22600034;
-                right: 80px;
-                top: 13px;
-                transform-origin: bottom;
+                top: 7.1%;
+                left: calc(100% - 3.4%);
+
+                transform-origin: top left;
                 transform: rotate(90deg);
                 line-height: 1;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1399px) {
+    .hero {
+        .hero-media {
+            .background {
+                height: 650px;
+                img {
+                    left: -22%;
+                }
+                span {
+                    left: calc(100% - 2.4%);
+
+                    font-size: 14rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .container {
+        --container-padding: 30px;
+    }
+    .hero {
+        .hero-media {
+            .background {
+                height: 600px;
+                img {
+                    left: -26%;
+                }
+                span {
+                    top: 15%;
+                    font-size: 12rem;
+                }
+            }
+        }
+        .hero-info {
+            .heading {
+                font-size: 4.2rem;
+                span {
+                    font-size: 3.2rem;
+                }
+            }
+            .desc {
+                margin-top: 25px;
+                font-size: 1.5rem;
+                width: 460px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .hero {
+        .hero-media {
+            .background {
+                height: 500px;
+                img {
+                    left: -26%;
+                }
+                span {
+                    font-size: 9rem;
+                }
+            }
+        }
+        .hero-info {
+            .heading {
+                font-size: 3.5rem;
+                span {
+                    display: inline-block;
+                    line-height: 1.2;
+                    font-size: 2.2rem;
+                    margin-bottom: 10px;
+                }
+            }
+            .desc {
+                font-size: 1.3rem;
+                width: 410px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .hero {
+        .hero-media {
+            .background {
+                width: 110%;
+                height: 500px;
+                flex-direction: column;
+                justify-content: space-evenly;
+                img {
+                    position: static;
+                }
+                span {
+                    position: static;
+                    font-size: 6rem;
+                    margin-top: -50px;
+                    transform: rotate(0);
+                }
+            }
+        }
+        .hero-info {
+            margin-top: 50px;
+            .heading {
+                font-size: 2.5rem;
+                span {
+                    display: inline-block;
+                    line-height: 1.2;
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+            }
+            .desc {
+                font-size: 1.3rem;
+                width: 100%;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .hero {
+        .hero-media {
+            .background {
+                width: 100%;
+                height: 650px;
+                img {
+                    margin-top: -60px;
+                }
+                span {
+                    font-size: 9rem;
+                }
+            }
+        }
+        .hero-info {
+            text-align: center;
+            .heading {
+                font-size: 3.8rem;
+                span {
+                    display: inline-block;
+                    line-height: 1.2;
+                    font-size: 2.8rem;
+                    margin-bottom: 10px;
+                }
+            }
+            .desc {
+                font-size: 1.4rem;
+                width: 90%;
+                margin: 30px auto;
+                line-height: 1.4;
             }
         }
     }

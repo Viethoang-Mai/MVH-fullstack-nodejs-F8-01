@@ -372,7 +372,7 @@ table {
   }
   .hero .hero-media .background img {
     width: 650px;
-    left: -16%;
+    left: -15%;
   }
   .hero .hero-media .background span {
     left: 97.6%;
@@ -530,35 +530,42 @@ table {
   max-width: 772px;
   margin-top: 30px;
 }
-.stats .stats-body {
+.stats .stats-body .row {
+  --column-space: 40px;
+  margin-top: 171px;
+}
+.stats .stats-body .row .col-4:first-of-type,
+.stats .stats-body .row .col-4:last-of-type {
   position: relative;
 }
-.stats .stats-body::after, .stats .stats-body::before {
+.stats .stats-body .row .col-4:first-of-type::before,
+.stats .stats-body .row .col-4:last-of-type::before {
   position: absolute;
   content: "";
   display: block;
   width: 282px;
   height: 282px;
   border-radius: 50%;
+  background: #dcffca;
   z-index: -1;
 }
-.stats .stats-body::before {
-  background: #dcffca;
-  left: 48px;
-  top: -142px;
+.stats .stats-body .row .col-4:first-of-type::before {
+  top: 0;
+  left: 10px;
+  transform: translate(-50%, -50%);
 }
-.stats .stats-body::after {
+.stats .stats-body .row .col-4:last-of-type::before {
+  right: 10px;
+  bottom: 0px;
   background: #ffd5bd;
-  bottom: -142px;
-  right: 48px;
-}
-.stats .stats-body > .row {
-  --column-space: 42px;
-  margin-top: 171px;
+  transform: translate(50%, 50%);
 }
 .stats .stats-body .item {
-  cursor: pointer;
   background: #fff;
+  width: 353px;
+  height: 405px;
+  box-shadow: -7px 10px 87px 0px rgba(54, 54, 54, 0.12);
+  cursor: pointer;
   transition: 0.25s ease-in-out;
   padding: 40px 0 71px 40px;
   box-shadow: -7px 10px 87px 0px rgba(54, 54, 54, 0.12);
@@ -583,14 +590,129 @@ table {
   height: 74px;
   margin-top: 29px;
   font-size: 2.4rem;
+  max-width: 267px;
 }
 .stats .stats-body .item:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 .stats .stats-body .item:hover .item-img {
   background: #f2ffec;
 }
 
+@media screen and (max-width: 1599px) {
+  .stats .stats-body .item {
+    width: 300px;
+    height: 452px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .stats .stats-body .col-4::before {
+    width: 220px !important;
+    height: 220px !important;
+  }
+  .stats .stats-body .item {
+    width: 260px;
+    height: 400px;
+  }
+  .stats .stats-body .item .stats-number {
+    font-size: 4rem;
+  }
+  .stats .stats-body .item .stats-desc {
+    font-size: 1.9rem;
+    max-width: 90%;
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .stats .stats-body .col-4::before {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .stats .stats-body .item {
+    width: 220px;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .stats .stats-body .row {
+    --column-space: 20px;
+  }
+  .stats .stats-body .col-4::before {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .stats .stats-body .item {
+    width: 190px;
+    height: 360px;
+  }
+  .stats .stats-body .item .stats-number {
+    font-size: 3.5rem;
+  }
+  .stats .stats-body .item .stats-desc {
+    margin: 0 auto;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .stats .stats-header .heading {
+    font-size: 2.5rem;
+  }
+  .stats .stats-header .desc {
+    font-size: 1.4rem;
+    margin-top: 30px;
+  }
+  .stats .stats-body .row {
+    --column-space: 0px;
+  }
+  .stats .stats-body .col-4 {
+    margin-bottom: 50px;
+  }
+  .stats .stats-body .col-4::before {
+    width: 140px !important;
+    height: 140px !important;
+    left: 30% !important;
+  }
+  .stats .stats-body .item {
+    margin: auto;
+    text-align: center;
+    width: 510px;
+    height: 250px;
+    padding: 20px;
+  }
+  .stats .stats-body .item .stats-number {
+    margin-top: 0px;
+    font-size: 3.5rem;
+  }
+  .stats .stats-body .item .stats-desc {
+    font-size: 1.7rem;
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .stats .stats-header .heading {
+    font-size: 3.4rem;
+  }
+  .stats .stats-body .item {
+    width: 380px;
+    height: 250px;
+  }
+  .stats .stats-body .item .stats-number {
+    margin-top: 0px;
+    font-size: 3.5rem;
+  }
+  .stats .stats-body .item .stats-desc {
+    font-size: 1.7rem;
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .stats .stats-body .item {
+    width: 300px;
+    height: 250px;
+  }
+}
 .product {
   margin-top: 290px;
   text-align: center;

@@ -7,7 +7,7 @@ var a = 4,
 a += b;
 b = a - b;
 a = a - b;
-console.log(`Hai số đã được hoán vị: a = ${a}, b=${b}`);
+console.log(`Hai số đã được hoán vị: a = ${a}, b = ${b}`);
 
 // ===============================================================
 
@@ -17,7 +17,7 @@ console.log(`res = ${res}`);
 
 // ===============================================================
 
-/* BT3:
+/* BT3: Tìm số lớn nhất
 Input:
 Cho trước 3 số a, b, c
 Output:
@@ -32,7 +32,7 @@ console.log(`Max = ${max}`);
 
 // ===============================================================
 
-/*Ex04:
+/*BT4: Kiểm tra số cùng dấu
 Cho trước 2 số a, b
 Output:
 Kiểm tra 2 số cùng dấu hay không và hiển thị kết quả ra màn hình*/
@@ -43,7 +43,7 @@ else console.log(`a va b trái dấu`);
 
 // ===============================================================
 
-/* Ex05:
+/* BT5: Sắp xếp 3 số
 Input:
 Cho trước 3 số a, b, c
 Output:

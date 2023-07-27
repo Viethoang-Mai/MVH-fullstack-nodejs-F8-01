@@ -1,11 +1,12 @@
 @import "parts/variables";
 @import "parts/reset";
-@import "parts/base";
 @import "parts/mixins";
+@import "parts/base";
 
 // import layout
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/hero";
-@import "layouts/_stats";
+@import "layouts/stats";
 @import "layouts/products";
+@import "layouts/news";

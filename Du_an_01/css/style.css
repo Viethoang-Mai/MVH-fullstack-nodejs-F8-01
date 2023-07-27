@@ -261,6 +261,9 @@ table {
   }
 }
 @media screen and (max-width: 767px) {
+  .header {
+    justify-content: center;
+  }
   .header #burger:checked ~ .header-menu {
     transform: translate(0);
   }
@@ -296,24 +299,30 @@ table {
     font-size: 1.5rem;
     padding-bottom: 10px;
   }
-  .header .col-md-4:nth-of-type(2) {
-    text-align: right;
-    order: 3;
+  .header .col-md-4:first-of-type {
+    order: 2;
   }
-  .header .col-md-4:nth-of-type(3) {
+  .header .col-md-4:nth-of-type(2) {
+    order: 1;
+  }
+  .header .col-md-4:last-of-type {
     order: 2;
   }
   .header .header-icon {
-    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
   }
   .header .header-icon .cart-icon {
-    order: 2;
+    order: 1;
     margin: 0;
   }
 }
 @media screen and (max-width: 575px) {
-  .header .header-icon {
-    justify-content: space-around;
+  .header .header-icon .search-icon {
+    display: none;
+  }
+  .header .header-icon .cart-icon {
+    order: 2;
   }
 }
 .hero .container .row {
@@ -841,6 +850,74 @@ table {
   .product-up .text span, .product-down .price span,
   .product-down .text span {
     font-size: 2.5rem;
+  }
+}
+.news {
+  margin-top: 120px;
+  line-height: 1.5;
+}
+.news .news-header {
+  text-align: center;
+}
+.news .news-header .heading {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 28px;
+}
+.news .news-header .desc {
+  max-width: 789px;
+}
+.news .news-body {
+  --column-space: 20px;
+  margin-top: 60px;
+}
+.news .news-body .article {
+  border-radius: 8px;
+}
+.news .news-body .art-row {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.news .news-body .art-row .title {
+  color: #46b20f;
+}
+.news .news-body .art-row-date {
+  display: flex;
+  column-gap: 12px;
+}
+.news .news-body .news-body-heading {
+  margin: 20px 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  max-width: 475px;
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 991px) {
+  .news .news-body .article {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .news .news-body .article {
+    margin-bottom: 50px;
+  }
+  .news .news-body .article .news-body-heading {
+    font-size: 1.7rem;
+  }
+  .news .news-body .article .art-row {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .news .news-body .article {
+    margin-bottom: 50px;
+  }
+  .news .news-body .article .art-row {
+    font-size: 1.4rem;
   }
 }
 

@@ -38,7 +38,8 @@ Output:
 Kiểm tra 2 số cùng dấu hay không và hiển thị kết quả ra màn hình*/
 var a = 4,
     b = -3;
-if (a * b >= 0) console.log(`a va b cùng dấu`);
+if (a * b > 0) console.log(`a va b cùng dấu`);
+else if (a == 0 || b == 0) console.log(`Nhập lại số khác 0`);
 else console.log(`a va b trái dấu`);
 
 // ===============================================================

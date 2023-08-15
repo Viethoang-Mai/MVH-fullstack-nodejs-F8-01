@@ -1,11 +1,11 @@
-var users = [[`An `, `Tuấn`], `Dũng`, `Yến`];
+var users = [`An `, `Tuấn`, `Dũng`, `Yến`];
 console.log(users);
 //1 fill() Cập nhật tất cả các phần tử thành 1 giá trị
 // user.fill(`F8`);
 //2 duyệt từng phần tử của mảng và trả về element và index(Trong callback). Hàm này sẽ không có gtri trả về, Không dừng được
-users.forEach(function (user, index) {
-    console.log(user, index);
-});
+// users.forEach(function (user, index) {
+//     console.log(user, index);
+// });
 // 3 Map(callback)
 /* Trả về một mảng mới*/
 // var newArr = users.map(function (user, index) {
